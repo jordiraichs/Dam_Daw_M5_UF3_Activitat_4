@@ -99,6 +99,10 @@ public class Concessionari {
         }
     }
 
+    public void mostrarDades(){
+        System.out.println(" El concessionari és : " + this.nom);
+    }
+
     /** Mètodes privats */
     private Cotxe getCotxe(String matricula){
         Cotxe co = null;

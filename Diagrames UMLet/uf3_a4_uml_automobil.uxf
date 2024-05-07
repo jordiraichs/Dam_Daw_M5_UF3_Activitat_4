@@ -1,18 +1,18 @@
-<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>130</x><y>10</y><w>280</w><h>180</h></coordinates><panel_attributes>transparency=90
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>100</x><y>10</y><w>280</w><h>180</h></coordinates><panel_attributes>transparency=90
 bg=green
 /Automobil/
 --
-+ marca: String
-+ model: String
-+ matricula: String
-+ km: float
+- marca: String
+- model: String
+- matricula: String
+- km: float
 __# totalAuto: int__
 --
 + mostrarDades(): String
 /+ consumBenzina(in litresX100: Float): float/
 __+ getTotalAutos():int__
 __+ matriculaCorrecta(in matricula:String): bool __
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>50</x><y>270</y><w>540</w><h>110</h></coordinates><panel_attributes>transparency=90
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>20</x><y>270</y><w>540</w><h>110</h></coordinates><panel_attributes>transparency=90
 bg=white
 Coche
 --
@@ -22,7 +22,7 @@ Coche
 + Coche(in marca: String, in model: String, in matricula: String, in combustible: String)
 + consumBenzina(in litresX100: Float): Float
 + mostrarDades(): String
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>210</x><y>180</y><w>30</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>UMLClass</id><coordinates><x>620</x><y>0</y><w>280</w><h>100</h></coordinates><panel_attributes>transparency=90
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>180</y><w>30</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>UMLClass</id><coordinates><x>590</x><y>0</y><w>280</w><h>100</h></coordinates><panel_attributes>transparency=90
 bg=green
 Persona
 --
@@ -32,7 +32,7 @@ Persona
 +Persona(dni:String,nom:String)
 + mostrarDades(): String
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>620</x><y>200</y><w>280</w><h>100</h></coordinates><panel_attributes>transparency=90
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>590</x><y>200</y><w>280</w><h>100</h></coordinates><panel_attributes>transparency=90
 bg=white
 Client
 --
@@ -41,7 +41,7 @@ Client
 + Client:(dni:String,nom:String)
 + mostrarDades(): String
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>740</x><y>90</y><w>30</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element><element><id>UMLClass</id><coordinates><x>410</x><y>470</y><w>520</w><h>230</h></coordinates><panel_attributes>Concessionari
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>710</x><y>90</y><w>30</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element><element><id>UMLClass</id><coordinates><x>380</x><y>470</y><w>520</w><h>230</h></coordinates><panel_attributes>Concessionari
 --
 -nom:String
 -LlistaCotxes: ArrayList&lt;Cotxe&gt;
@@ -55,7 +55,7 @@ Client
 +mostrarCotxes():void
 +mostrarClients():void
 +llogarCotxe(dni:String,matricula:String,data_ini:String,data_fi:String,preu:Double)
-....</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>30</x><y>470</y><w>230</w><h>190</h></coordinates><panel_attributes>Lloga
+....</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>470</y><w>230</w><h>190</h></coordinates><panel_attributes>Lloga
 --
 #cotxe:Cotxe
 #client:client
@@ -64,4 +64,12 @@ Client
 #preu:Double
 --
 Lloga(cotxe:Cotxe,client:Client,...)
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>750</x><y>290</y><w>30</w><h>200</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;180;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>370</y><w>160</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>140;100;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>250</x><y>550</y><w>180</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>160;10;10;10</additional_attributes></element></diagram>
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>720</x><y>290</y><w>30</w><h>200</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;180;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>240</x><y>370</y><w>160</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>140;100;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>220</x><y>550</y><w>180</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>160;10;10;10</additional_attributes></element><element><id>UMLNote</id><coordinates><x>410</x><y>30</y><w>170</w><h>100</h></coordinates><panel_attributes>    TOTS ELS ATRIBUTS 
+HAN DE SER PRIVATS.
+PER COMODITAT 
+ELS HE POSTAT 
+PÚBLICS O PROTECTED
+
+customelement=
+drawArc(5,5,10,50,50,80,false) fg=red bg=red //Parameters (x, y, width, height, start, extent, open)
+drawCircle(10,40,3) fg=red bg=red //Parameters (x, y, radius)</panel_attributes><additional_attributes></additional_attributes></element></diagram>

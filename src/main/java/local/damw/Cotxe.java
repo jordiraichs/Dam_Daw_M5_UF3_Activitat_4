@@ -4,7 +4,9 @@ public class Cotxe extends Automobil {
     String combustible; // Diesel, Gasolina, Hybrid, Elèctric
 
     // constructor per defecte
-    public Cotxe(){Automobil.totalAutos ++ ;}
+    public Cotxe(){
+        super();
+        Automobil.totalAutos ++ ;}
 
     // constructor
     public Cotxe(String marca, String model, String matricula,int km ,String combustible){
